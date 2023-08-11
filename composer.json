@@ -1,0 +1,51 @@
+{
+    "name": "archtechx/laravel-seo",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Samuel Štancl",
+            "email": "samuel@archte.ch"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "ArchTech\\SEO\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArchTech\\SEO\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.24|^9.0|^10.0",
+        "illuminate/view": "^8.24|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23|^7.0|^8.0",
+        "nunomaduro/larastan": "^1.0|^2.4",
+        "pestphp/pest": "^1.2|^2.0",
+        "pestphp/pest-plugin-laravel": "^1.0|^2.0",
+        "intervention/image": "^2.7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArchTech\\SEO\\SEOServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
